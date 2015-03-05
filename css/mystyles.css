@@ -1,14 +1,14 @@
 .btn {
-  padding: 14px 24px;
-  border: 0 none;
   font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  width: 10%;
-  margin: 3px 1px;
+  width: 100%;
   box-shadow: 0 3px 0 0 #007299;
 }
+.td {
+  width: 100px;
+  margin: 3px 1px;
+  padding: 3px !important;
+}
 #screen{
-  width: 40%;
+  width: 75%;
   text-align: right;
 }
