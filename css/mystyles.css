@@ -1,14 +1,47 @@
-.btn {
-  font-weight: 700;
-  width: 100%;
-  box-shadow: 0 3px 0 0 #007299;
-}
-.td {
-  width: 100px;
-  margin: 3px 1px;
-  padding: 3px !important;
-}
-#screen{
-  width: 75%;
+.screen{
+  width: 87%;
   text-align: right;
+  margin: 6px 0px 3px 3px;
+}
+
+.num-block{
+	width: 300px;
+	float: left;
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.operator-block{
+	width: 100px;
+	float: left;
+	}
+
+.num-block > button, .operator-block > button{
+	width: 94px;
+	height: 40px;
+	margin: 3px;
+  font-weight: 700;
+  box-shadow: 0 3px 0 0 #007299;
+	float: left;
+}
+
+.num-block > button{
+  -webkit-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+
+.container{
+	width: 450px;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.screen-div{
+  width: 100%;
+}
+
+.page-body{
+	margin-top: 20px;
+	float: left
 }

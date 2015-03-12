@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/mystyles.css" media="screen" />
   	<script src="js/caluculator.js"></script>
     <meta charset="utf-8">
@@ -12,93 +11,9 @@
 
 </head>
 <body>
-	<div class="container">
-	  <div class="page-header">
-      <h1>Caluculator</h1>
-    </div>
-    <br/>
-    <div class="col-md-6">
-		    <table class='table table-striped col-sm-offset-1'>
-		      <thead>
-		        <tr>
-	            <td> <input type="text" name="screen-box" id="screen" class="form-control" readonly>
-	            </td>
-		        </tr>
-		      </thead>
-		      <tbody>
-		        <tr>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" class="btn btn-primary btn-info btn-lg">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" class="btn btn-primary btn-info btn-lg">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" class="btn btn-primary btn-info btn-lg" VALUE="AC" id="reset" OnClick="reset()">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" class="btn btn-primary btn-info btn-lg" VALUE="+" OnClick="inputString('+')">
-	            </td>
-		        </tr>
-		        <tr>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="7" class="btn btn-primary btn-info btn-lg " OnClick="inputString('7')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="8" class="btn btn-primary btn-info btn-lg " OnClick="inputString('8')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="9" class="btn btn-primary btn-info btn-lg " OnClick="inputString('9')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="-" class="btn btn-primary btn-info btn-lg " OnClick="inputString('-')">
-	            </td>
-		        </tr>
-		        <tr>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="4" class="btn btn-primary btn-info btn-lg " OnClick="inputString('4')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="5" class="btn btn-primary btn-info btn-lg " OnClick="inputString('5')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="6" class="btn btn-primary btn-info btn-lg " OnClick="inputString('6')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="/" class="btn btn-primary btn-info btn-lg " OnClick="inputString('/')">
-	            </td>
-		        </tr>
-		        <tr>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="1" class="btn btn-primary btn-info btn-lg " OnClick="inputString('1')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="2" class="btn btn-primary btn-info btn-lg " OnClick="inputString('2')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="3" class="btn btn-primary btn-info btn-lg " OnClick="inputString('3')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="*" class="btn btn-primary btn-info btn-lg " OnClick="inputString('*')">
-	            </td>
-		        </tr>
-		        <tr>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="0" class="btn btn-primary btn-info btn-lg " OnClick="inputString('0')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="." class="btn btn-primary btn-info btn-lg " OnClick="inputString('.')">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="=" class="btn btn-primary btn-info btn-lg " OnClick="result();">
-	            </td>
-	            <td class="td num_sym pull-left">
-                <INPUT TYPE="button" VALUE="%" id="result" class="btn btn-primary btn-info btn-lg " OnClick="inputString('%')">
-	            </td>
-		        </tr>
-          </tbody>
-		    </table>
-      </div>
+	<div class="container" id="container" >
+    <input type="text" id="cal-name">
+    <button TYPE="button" onclick="createNewCaluculator();">Create</button>
 	</div>
 </body>
 </html>
